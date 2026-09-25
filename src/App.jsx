@@ -1,6 +1,6 @@
 import { useState } from "react";
+import Education from "./components/Education";
 import Information from "./components/information";
-import Education from "./components/education";
 
 function App() {
 
