@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./styles/App.css";
 
-import Education from "./components/Education";
+import Education from "./components/education";
 import Information from "./components/information";
 import Experience from "./components/Experience";
 import Cvpreview from "./components/Cvpreview";
