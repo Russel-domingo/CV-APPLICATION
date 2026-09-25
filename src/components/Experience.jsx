@@ -44,7 +44,7 @@ function Experience(props) {
                         value={positionTitle}
                         onChange={(event) => setPositionTitle(event.target.value)} 
                     />
-                    <label htmlFor="mainResponsibility">Main mainResponsibility</label>
+                    <label htmlFor="mainResponsibility">Main Responsibility</label>
                     <textarea 
                         name="mainResponsibility" 
                         value={mainResponsibility}
