@@ -39,17 +39,17 @@ function Education(props) {
                     value={titleOfStudy}
                     onChange={(event) => setTitleOfStudy(event.target.value)}
                 />
-                <label htmlFor="dataOfStudy">Date of study</label>
+                <label htmlFor="dateOfStudy">Date of study</label>
                 <input 
                     type="date" 
-                    name="dataOfStudy" 
+                    name="dateOfStudy" 
                     value={dateOfStudy} 
                     onChange={(event) => setDateOfStudy(event.target.value)}
                 />
 
                 <button type="submit">Submit</button>
             </form>
-            ) : (<button onChange={() => isEdit(false)}> Edit</button>)}
+            ) : (<button onClick={() => setEdit(false)}> Edit</button>)}
            
         </section>
     );

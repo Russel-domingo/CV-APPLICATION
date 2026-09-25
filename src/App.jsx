@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Education from "./components/Education";
 import Information from "./components/information";
+import Experience from "./components/Experience";
 
 function App() {
 
@@ -15,6 +16,13 @@ function App() {
         titleOfStudy: '',
         dateOfStudy: ''
     });
+    const [experience, setExperience] = useState({
+        companyName: '',
+        positionTitle: '',
+        mainResponsibility: '',
+        dateFrom: '',
+        dateUntil: '',
+    });
 
     return (
         <div>
@@ -28,6 +36,13 @@ function App() {
             <h2>{education.schoolName}</h2>
             <h2>{education.titleOfStudy}</h2>
             <h2>{education.dateOfStudy}</h2>
+            <Experience experience={experience} setExperience={setExperience}></Experience>
+            <h1>Experience</h1>
+            <h2>{experience.companyName}</h2>
+            <h2>{experience.positionTitle}</h2>
+            <h2>{experience.mainResponsibility}</h2>
+            <h2>{experience.dateFrom}</h2>
+            <h2>{experience.dateUntil}</h2>
         </div>
     );
 }
