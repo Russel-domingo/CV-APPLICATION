@@ -18,7 +18,7 @@ function Information(props) {
             fullName: fullName,
             email: email,
             phoneNumber: phoneNumber
-        })
+        });
         setEdit(true);
     };
 
@@ -28,7 +28,7 @@ function Information(props) {
             <h1>General Information</h1>
             {!isEdit ? 
             ( 
-            <form className="general-information" onSubmit={handleSubmit}>
+            <form className="general-information-form" onSubmit={handleSubmit}>
                 <label htmlFor="fullName"> Enter name</label>
                 <input
                     name="fullName"
@@ -43,6 +43,7 @@ function Information(props) {
                     onChange={(event) => setEmail(event.target.value)}
                     value={email} 
                 />
+                <label htmlFor="phoneNumber">Enter Phone number</label>
                 <input 
                     type="tel" 
                     name="phoneNumber" 
