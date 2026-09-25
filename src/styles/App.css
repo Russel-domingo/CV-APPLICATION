@@ -124,3 +124,13 @@ button {
 button:hover {
     opacity: 0.9;
 }
+
+@media (max-width: 800px) {
+    .app {
+        grid-template-columns: 1fr;
+    }
+
+    .preview-panel {
+        min-height: auto;
+    }
+}
