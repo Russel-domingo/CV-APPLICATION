@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+
 function Information(props) {
 
     const [isEdit, setEdit] = useState(false);
@@ -24,11 +25,11 @@ function Information(props) {
 
 
     return (
-        <section className="information-section">
-            <h1>General Information</h1>
+        <section className="form-section">
+            <h2>General Information</h2>
             {!isEdit ? 
             ( 
-            <form className="general-information-form" onSubmit={handleSubmit}>
+            <form className="resume-form" onSubmit={handleSubmit}>
                 <label htmlFor="fullName"> Enter name</label>
                 <input
                     name="fullName"
@@ -57,7 +58,6 @@ function Information(props) {
                 </button>
             </form>
             ) : (<button onClick={() => setEdit(false)}> Edit</button>) }
-            
         </section>
 
     );

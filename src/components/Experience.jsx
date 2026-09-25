@@ -26,10 +26,10 @@ function Experience(props) {
     }
 
     return(
-        <section className="experience-section">
+        <section className="form-section">
             <h1>Practical Experience</h1>
             {!isEdit ? (
-                <form className="experience-form" onSubmit={handleSubmit}>
+                <form className="resume-form" onSubmit={handleSubmit}>
                     <label htmlFor="company-name">Enter company name</label>
                     <input 
                         type="text" 

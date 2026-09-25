@@ -20,11 +20,11 @@ function Education(props) {
     }
 
     return(
-        <section className="education-section">
+        <section className="form-section">
             <h2>Education experience</h2>
             {!isEdit ? 
             (
-            <form className="education-form" onSubmit={handleSubmit}>
+            <form className="resume-form" onSubmit={handleSubmit}>
                 <label htmlFor="schoolName">School name</label>
                 <input 
                     type="text" 
